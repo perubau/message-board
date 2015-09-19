@@ -14,8 +14,9 @@
 
 <%= form_for(Message.new) do |f| %>
   名前:
-  <%= f.text_field :name, class: 'form-control', style: 'height: 30px' 'width: 100px' %>
+  <%= f.text_field :name, class: 'form-control', style: 'height: 30px' %>
   内容:
-  <%= f.text_area :body , class: 'form-control', style: 'height: 30px' 'width: 100px'%>
+  <%= f.text_area :body , class: 'form-control', style: 'height: 30px' %>
+  <br>
   <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
